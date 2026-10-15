@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#FFE0B5">
+<title>Happy Birthday 🎂</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌻</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-step="2">
+
+<div id="field"></div>
+
+<main class="page">
+  <div class="chip" data-t="ors.chip"></div>
+  <h1 class="h2" data-t="ors.title"></h1>
+  <p class="lead" data-t="ors.text"></p>
+
+  <button class="sachet" id="sachet" type="button" aria-label="Tap the ORS sachet to pour">
+    <span class="tape"></span>
+    <img src="assets/ors.jpg" alt="Electral ORS sachet">
+  </button>
+
+  <div class="pour-zone">
+    <div class="stream-wrap"><div class="stream" id="stream"></div></div>
+    <div class="glass-wrap">
+      <span class="straw"></span>
+      <div class="glass"><div class="water" id="water"></div></div>
+    </div>
+  </div>
+
+  <div class="status">
+    <p class="tap-hint" id="tap" data-t="ors.tap"></p>
+    <p class="done" id="done" data-t="ors.done"></p>
+  </div>
+
+  <a class="btn go reveal" id="next" href="shot1.html" data-t="ors.button"></a>
+</main>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
